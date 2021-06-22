@@ -42,7 +42,7 @@ app.use(function (err, req, res, next) {
 });
 
 mongoose
-  .connect("mongodb+srv://atta-01:attachme@cluster0.qddrp.mongodb.net/final-p?retryWrites=true&w=majorit", 
+  .connect("mongodb+srv://admin:admin@terminallab.rcbok.mongodb.net/terminallab", 
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true  })
   .then(() => {
     console.log("Connected to Mongo....blala")
