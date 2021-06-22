@@ -42,11 +42,10 @@ app.use(function (err, req, res, next) {
 });
 
 mongoose
-  .connect("mongodb+srv://atta-01:attachme@cluster0.qddrp.mongodb.net/final-p?retryWrites=true&w=majorit", 
-  { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true  })
-  .then(() => {
-    console.log("Connected to Mongo....blala")
-    app.listen(8000);
+  .connect("mongodb+srv://gasolel:gasolel@cluster0.i0r77.mongodb.net/myProduction?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   })
+  .then(() => console.log("Connected to Mongo...."))
   .catch((error) => console.log(error.message));
 module.exports = app;
