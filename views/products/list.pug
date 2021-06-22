@@ -10,24 +10,14 @@ block content
         thead
             tr
                 th Name
-                th Description
                 th Price
-                th Actions           
-                th Rating     
+                th Actions
         tbody
             each product in products
                 tr
                     td=product.name
-                    td=product.description
                     td=product.price
                     td
                         a(href="/products/delete/"+product._id, class="btn btn-danger") Delete
                         a(href="/products/edit/"+product._id, class="btn btn-warning") Edit
                         a(href="/products/cart/"+product._id, class="btn btn-info") Add To Cart
-                    - if (product.rating)
-                        td 
-                            -var n = 0
-                            while n < product.rating
-                                span.fa.fa-star.checked
-                                - n ++
-    
