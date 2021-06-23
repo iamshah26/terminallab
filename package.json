@@ -1,5 +1,5 @@
 {
-  "name": "final-papr",
+  "name": "finale",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "express": "^4.16.4",
     "express-session": "^1.17.2",
     "http-errors": "~1.6.3",
+    "joi": "^17.4.0",
     "mongodb": "^3.6.9",
     "mongoose": "^5.12.14",
     "morgan": "~1.9.1",

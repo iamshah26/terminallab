@@ -42,11 +42,11 @@ app.use(function (err, req, res, next) {
 });
 
 mongoose
-  .connect("mongodb+srv://admin:admin@labterminal.wegba.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", 
+  .connect("mongodb+srv://atts:12345@cluster0.qddrp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", 
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true  })
   .then(() => {
     console.log("Connected to Mongo....blala")
-    app.listen(8000);
+    app.listen(3000);
   })
   .catch((error) => console.log(error.message));
 module.exports = app;

@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1 My shopping Cart
+  h1 My-shopping-Cart
   - var total=0;
     table.table
       thead
@@ -16,6 +16,8 @@ block content
             td=item.price
             td
               a(href="/products/cart/remove/"+item._id, class="btn btn-danger") Remove Item
+            td
+              a(href="/products/rating/"+item._id, class="btn btn-success") Rate
       tfoot
         tr
           td Total
